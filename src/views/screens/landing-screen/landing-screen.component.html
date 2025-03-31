@@ -1,3 +1,84 @@
+<div class="top-bar">
+  <div class="left-content"></div>
+  <div class="right-content">
+    <button
+      class="btn btn-danger mx-1"
+      [hidden]="this.globalStore.isDarkModeAvailable()"
+    >
+      DarkMode
+    </button>
+    @if(this.globalStore.isAtChapter() != 4) {
+    <button class="btn btn-danger" (click)="this.globalStore.setIsAtChapter(0)">
+      Quitter l'application
+    </button>
+    } @else {
+    <app-fake-btn-2 />
+    }
+  </div>
+</div>
+
 <h1 class="centered">There is no app</h1>
-<button class="bg-white" [hidden]="this.globalStore.isDarkModeAvailable()">Switch</button>
+
+<app-falling-btn />
+
+<button class="bg-white">Switch</button>
+<div></div>
+
+<!-- CHAP 0 -->
+@if (this.globalStore.isAtChapter() == 0) {
+
+<button
+  class="btn btn-primary text-white centered-bellow"
+  (click)="this.globalStore.moveToNextChapter()"
+>
+  Lancer l'application
+</button>
+}
+
+<!-- CHAP 1 -->
+@if (this.globalStore.isAtChapter() == 1) {
+
+<div class="centered-bellow text-center mt-5">
+  <p>Frere tu sais pas lire ou quoi</p>
+
+  <button
+    class="btn btn-primary text-white"
+    (click)="this.globalStore.moveToNextChapter()"
+  >
+    Non
+  </button>
+
+  <button
+    class="btn btn-primary text-white ms-2"
+    (click)="this.globalStore.moveToNextChapter()"
+  >
+    Non, mais écris en verlant
+  </button>
+</div>
+}
+
+<!-- CHAP 2 -->
+
+@if (this.globalStore.isAtChapter() == 2) {
+
+<div class="w-100 h-100">
+  <app-runaway-btn />
+</div>
+}
+
+<!-- CHAP 3 -->
+@if (this.globalStore.isAtChapter() == 3) {
+
 <app-correct-css />
+}
+
+<!-- CHAP 4 -->
+@if (this.globalStore.isAtChapter() == 4) {
+
+<div class="centered-bellower text-center">
+  <p>Bon ok tu l'as bien méritée</p>
+
+  <app-fake-btn class="mt-5" />
+</div>
+}
+<app-steam-achievement />

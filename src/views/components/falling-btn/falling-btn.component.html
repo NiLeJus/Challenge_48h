@@ -1,0 +1,6 @@
+<div class="falling-div" [class.animate]="animationService.startAnimation()">
+  Je tombe du haut de l'écran !
+</div>
+<button class="btn btn-primary mt-5" (click)="animationService.triggerFall()">
+  Déclencher Animation
+</button>

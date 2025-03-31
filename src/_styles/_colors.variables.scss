@@ -14,3 +14,22 @@ $UIlight0: #f4f4f4 !default;
 $UIlight1: #dddddd !default;
 $UIlight2: #acacac !default;
 $UIlight3: #595959 !default;
+
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+.dark-theme {
+  --background-color: #333333;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
