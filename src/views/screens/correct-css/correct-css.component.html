@@ -1,16 +1,72 @@
 <h4>Code CSS :</h4>
 <pre>
-<code>.changebackgroundcolor &#123;
-  background-color:
-  <input
-    type="text"
-    [(ngModel)]="backgroundColor"
-    (input)="updateBackground()"
-    class="editable-input"
-    value="{{backgroundColor}}"
-  />;
-&#125;
-</code>
+  <code>.changebackgroundcolor &#123;
+    background-color:
+    <input
+      type="text"
+      [(ngModel)]="backgroundColor"
+      (input)="updateBackground()"
+      class="editable-input"
+      value="{{backgroundColor}}"
+    />;
+  &#125;
+
+
+  .btnColor &#123;
+    background-color:
+    <input
+      type="text"
+      [(ngModel)]="backgroundColorBtn"
+      (input)="updateBackground()"
+      class="editable-input"
+      value="{{backgroundColorBtn}}"
+    />;
+  &#125;
+  </code><code>.changebackgroundcolor &#123;
+    background-color:
+    <input
+      type="text"
+      [(ngModel)]="backgroundColor"
+      (input)="updateBackground()"
+      class="editable-input"
+      value="{{backgroundColor}}"
+    />;
+  &#125;
+
+
+  .changeBtnColor &#123;
+    background-color:
+    <input
+      type="text"
+      [(ngModel)]="backgroundColorBtn"
+      (input)="updateBackground()"
+      class="editable-input"
+      value="{{backgroundColorBtn}}"
+    />;
+  &#125;
+  </code><code>.changebackgroundcolor &#123;
+    background-color:
+    <input
+      type="text"
+      [(ngModel)]="backgroundColor"
+      (input)="updateBackground()"
+      class="editable-input"
+      value="{{backgroundColor}}"
+    />;
+  &#125;
+
+
+  .changeBtnColor &#123;
+    background-color:
+    <input
+      type="text"
+      [(ngModel)]="backgroundColorBtn"
+      (input)="updateBackground()"
+      class="editable-input"
+      value="{{backgroundColorBtn}}"
+    />;
+  &#125;
+  </code>
 </pre>
 
 <div class="changebackgroundcolor" [style.backgroundColor]="backgroundColor">
@@ -18,5 +74,7 @@
 </div>
 
 <div>
-  
+  <button class="btn text-white" [style.backgroundColor]="backgroundColorBtn" (click)="makeDarkModeAvailable()">
+    See me ?
+  </button>
 </div>
