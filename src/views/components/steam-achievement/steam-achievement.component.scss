@@ -1,0 +1,22 @@
+.achievement-img {
+  height: 150px;
+}
+.achievement-container {
+  position: fixed;
+  bottom: -100px; /* Position initiale en dehors de l'écran */
+  z-index: 1050;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Animation fluide */
+}
+
+.achievement-container.slide-up {
+  bottom: 20px; /* Position finale visible */
+}
+
+.achievement-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.achievement-body {
+  text-align: center;
+}
