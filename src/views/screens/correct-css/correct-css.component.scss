@@ -1,0 +1,13 @@
+.editable-input {
+  border: none; /* Supprime la bordure */
+  outline: none; /* Supprime l'effet de focus */
+  font-family: monospace; /* Correspond au style du code */
+  font-size: inherit; /* Correspond à la taille du texte environnant */
+  color: inherit; /* Utilise la même couleur que le texte environnant */
+  background: transparent; /* Supprime le fond par défaut */
+  width: auto; /* Ajuste automatiquement la largeur au contenu */
+}
+
+.editable-input:focus {
+  outline: none; /* Empêche tout effet visuel au focus */
+}
