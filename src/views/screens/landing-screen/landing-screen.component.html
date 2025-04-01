@@ -1,11 +1,13 @@
 <div class="top-bar">
-  <div class="left-content">
-    <button class="bg-white">Switch</button>
-  </div>
+  <div class="left-content"></div>
   <div class="right-content">
-    <button class="btn btn-danger mx-1" [hidden]="this.globalStore.isDarkModeAvailable()">
-      DarkMode
+    <button
+      class="btn btn-danger mx-1"
+      (click)="globalStore.moveToNextChapter()"
+    >
+      Next chap
     </button>
+
     @if(this.globalStore.isAtChapter() != 4) {
     <button class="btn btn-danger" (click)="this.globalStore.setIsAtChapter(0)">
       Quitter l'application
@@ -16,14 +18,17 @@
   </div>
 </div>
 
+@if (this.globalStore.isAtChapter() != 6) {
 <h1 class="centered">There is no app</h1>
-
-
+}
 
 <!-- CHAP 0 -->
 @if (this.globalStore.isAtChapter() == 0) {
 
-<button class="btn btn-primary text-white centered-bellow" (click)="this.globalStore.moveToNextChapter()">
+<button
+  class="btn btn-primary text-white centered-bellow"
+  (click)="this.globalStore.moveToNextChapter()"
+>
   Lancer l'application
 </button>
 }
@@ -34,11 +39,17 @@
 <div class="centered-bellow text-center mt-5">
   <p>Frere tu sais pas lire ou quoi</p>
 
-  <button class="btn btn-primary text-white" (click)="this.globalStore.moveToNextChapter()">
+  <button
+    class="btn btn-primary text-white"
+    (click)="this.globalStore.moveToNextChapter()"
+  >
     Non
   </button>
 
-  <button class="btn btn-primary text-white ms-2" (click)="this.globalStore.moveToNextChapter()">
+  <button
+    class="btn btn-primary text-white ms-2"
+    (click)="this.globalStore.moveToNextChapter()"
+  >
     Non, mais écris en verlant
   </button>
 </div>
@@ -70,16 +81,17 @@
 }
 <app-steam-achievement />
 
-
-
-<!-- CHAP 4 -->
+<!-- CHAP 5 -->
 @if (this.globalStore.isAtChapter() == 5) {
 <section>
-  <div class="blank">
-
-  </div>
+  <div class="blank"></div>
   <h1 class="centered">There is no app</h1>
   <h2 class="centered-below">Tiens joue au jeu, comme ça t'es content...</h2>
   <app-runner></app-runner>
 </section>
+}
+
+<!-- CHAP 6 -->
+@if (this.globalStore.isAtChapter() == 6) {
+<app-find-password class="" />
 }
