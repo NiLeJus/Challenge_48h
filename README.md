@@ -19,8 +19,3 @@ Termine l'étape du runner, puis clique sur le bouton à droite lorsqu'il devien
 ## Étape 6 : Analyse de l’image
 Dès que l’image apparaît, accède au code source pour la visualiser ou la télécharger.
 
-## Étape 7 : Affichage d’un bouton caché
-Fais tomber des lettres pour révéler un bouton caché.
-
-## Étape 8 : Mini-jeu Snake
-Réussis le mini-jeu Snake pour compléter cette étape finale.
