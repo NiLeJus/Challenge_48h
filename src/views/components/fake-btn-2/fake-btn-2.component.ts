@@ -15,8 +15,8 @@ export class FakeBtn2Component {
   buttonText = "Quitter l'application";
 
   onHover(): void {
-    this.buttonClass = 'btn btn-danger';
-    this.buttonText = "Quitter l'application";
+    this.buttonClass = 'btn btn-primary';
+    this.buttonText = "Lancer l'application";
   }
 
   onLeave(): void {
