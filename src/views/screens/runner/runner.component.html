@@ -1,0 +1,19 @@
+@if(runner){
+<div class="game-container">
+  <div class="character" [style.left.px]="characterX" [style.top.px]="characterY" [style.height.px]="characterHeight">
+  </div>
+
+  <div *ngFor="let obstacle of obstacles" [ngStyle]="{
+     'position': 'absolute',
+     'left': obstacle.x + 'px',
+     'top': obstacle.y + 'px',
+     'width': obstacle.width + 'px',
+     'height': obstacle.height + 'px',
+     'background-color': obstacle.isMiam ? 'blue' : (obstacle.isTP ? 'violet' : 'black')
+   }">
+  </div>
+  <button class="final-button" (click)="resetView()">
+    click ?
+  </button>
+</div>
+}
