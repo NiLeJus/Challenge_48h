@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { LandingScreenComponent } from '../views/screens/landing-screen/landing-screen.component';
+import { FallingTitleComponent } from "../views/falling-title/falling-title.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LandingScreenComponent],
+  imports: [LandingScreenComponent, FallingTitleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

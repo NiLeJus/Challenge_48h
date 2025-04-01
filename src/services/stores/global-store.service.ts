@@ -8,11 +8,17 @@ export class GlobalStoreService {
   isAtChapter: WritableSignal<number> = signal(0);
   isTheUserTarpinCong: WritableSignal<boolean> = signal(false);
 
+  constructor() {}
+
   setIsAtChapter(newValue: number) {
     this.isAtChapter.set(newValue);
   }
 
-  constructor() {}
+  hasALetterFallen: WritableSignal<boolean> = signal(false);
+
+  switchHasALetterFallen() {
+    this.hasALetterFallen.update((value) => !value);
+  }
 
   makeDarkModeAvailable() {
     this.isDarkModeAvailable.set(false);

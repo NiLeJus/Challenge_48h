@@ -11,12 +11,12 @@ import { CommonModule } from '@angular/common';
 export class FakeBtn2Component {
   globalStore = inject(GlobalStoreService);
 
-  buttonClass = 'btn btn-primary';
-  buttonText = 'Survolez-moi !';
+  buttonClass = 'btn btn-danger';
+  buttonText = "Quitter l'application";
 
   onHover(): void {
-    this.buttonClass = 'btn btn-danger';
-    this.buttonText = "Quitter l'application";
+    this.buttonClass = 'btn btn-primary';
+    this.buttonText = "Lancer l'application";
   }
 
   onLeave(): void {
