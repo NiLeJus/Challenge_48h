@@ -1,0 +1,10 @@
+  <button
+    [ngClass]="buttonClass"
+    (mouseenter)="onHover()"
+    (mouseleave)="onLeave()"
+    (click)="handleClick()"
+  >
+    <span class="shiny">
+      <span class="inner-shiny"> {{ buttonText }} </span>
+    </span>
+  </button>

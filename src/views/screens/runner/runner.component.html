@@ -1,5 +1,7 @@
 @if(runner){
 <div class="game-container">
+  <p class="title-miteux">utilise les fleches pour faire des trucs cool</p>
+  <p class="title-miteux2">Go aller au bout d'un runner miteux...</p>
   <div class="character" [style.left.px]="characterX" [style.top.px]="characterY" [style.height.px]="characterHeight">
   </div>
 
@@ -12,8 +14,8 @@
      'background-color': obstacle.isMiam ? 'blue' : (obstacle.isTP ? 'violet' : 'black')
    }">
   </div>
-  <button class="final-button" (click)="resetView()">
-    click ?
+  <button class="final-button" (click)="resetView()" (click)="this.globalStore.moveToNextChapter()">
+    click pas wesh
   </button>
 </div>
 }

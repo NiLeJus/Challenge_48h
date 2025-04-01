@@ -9,12 +9,78 @@
   transform: translate(-50%, -50%);
 }
 
+.bg-alpha {
+  background-color: #f0f8ff00;
+}
+
+.btn-scred {
+  cursor: default !important;
+}
+
+// * {
+//   /*Désactive la sélection de l'utilisateur*/
+//   -webkit-user-select: none; /* Chrome, Safari, Opéra */
+//   -moz-user-select: none; /* Firefox */
+//   -ms-user-select: none; /* Internet Explorer/Edge */
+//   user-select: none; /* Propriété standard */
+// }
+
+.centered-bellow {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered-bellower {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered-above {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered-far-x1-bellow {
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered-far-x2-bellow {
+  position: absolute;
+  top: 260%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered-far-x3-bellow {
+  position: absolute;
+  top: 360%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered-far-max-bellow {
+  position: absolute;
+  top: 450%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
 
 
 body {
+  height: 100vh;
   box-sizing: border-box;
   scrollbar-width: none;
   /* Firefox */

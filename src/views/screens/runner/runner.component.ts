@@ -1,5 +1,6 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { GlobalStoreService } from '../../../services/stores/global-store.service';
 
 @Component({
   selector: 'app-runner',
@@ -23,6 +24,7 @@ export class RunnerComponent implements OnInit {
   jumpStrength = 15;
   jumpDirection = 0;
   gameInterval: any;
+  globalStore = inject(GlobalStoreService);
 
   obstacles = [
     { x: 0, y: 0, width: 40, height: 200 }, // mur gauche

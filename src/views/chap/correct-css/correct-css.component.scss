@@ -11,3 +11,19 @@
 .editable-input:focus {
   outline: none; /* Empêche tout effet visuel au focus */
 }
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: #21606E;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}

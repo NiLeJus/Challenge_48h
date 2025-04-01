@@ -1,0 +1,19 @@
+@if (this.globalStore.isTheUserTarpinCong()) {
+<div
+  class="position-fixed bottom-0 end-0 achievement-container"
+  [class.slide-up]="isAlertVisible"
+>
+  <div class="d-flex flex-row">
+    <button
+      type="button"
+      class="btn-close ms-auto me-2"
+      data-bs-dismiss="toast"
+      aria-label="Close"
+      (click)="this.globalStore.switchTheUserTarpinCong()"
+    ></button>
+  </div>
+  <div class="toast-body">
+    <img src="/steam-achievement.png" class="achievement-img" />
+  </div>
+</div>
+}

@@ -1,0 +1,288 @@
+<div class="css-container">
+  <h4 class="mt-5 ms-5">Errors</h4>
+  <p class="ms-2">Warning Error euhhh css crashed because truc</p>
+  <pre>
+  <code class="text-black-50 " @slideIn>
+  $primary: #0f9e99 !default;
+  $secondary: #d4d067 !default;
+  $grey: #536878 !default;
+  $dark: #262424 !default;
+  $light: #f1f5f9 !default;
+  $gold: #b5b25c !default;
+
+  $UIgreen: #1ded83 !default;
+  $UIcyan: #5bf6ff !default;
+  $UIyellow: #f1ea4d !default;
+  $UIred: #e07a76 !default;
+  $UIorange: #f39b3f !default;
+  $UIlight0: #f4f4f4 !default;
+  $UIlight1: #dddddd !default;
+  $UIlight2: #acacac !default;
+  $UIlight3: #595959 !default;
+
+  body
+  &#123;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  &#125;
+
+  .navbar
+  &#123;
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    text-align: center;
+  &#125;
+
+  .navbar a
+  &#123;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+  &#125;
+
+  .navbar a:hover
+  &#123;
+    background-color: #555;
+  &#125;
+
+  .container
+  &#123;
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  &#125;
+
+  .product-card .price
+  &#123;
+    font-weight: bold;
+    color: #e60000;
+    font-size: 16px;
+  &#125;
+
+  .product-card .add-to-cart
+  &#123;
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+  &#125;
+
+  .product-card .add-to-cart:hover
+  &#123;
+    background-color: #218838;
+  &#125;
+
+  .cart
+  &#123;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow-y: auto;
+  &#125;
+
+  .cart h2
+  &#123;
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  &#125;
+
+  .cart-item
+  &#123;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  &#125;
+
+  .cart-item img
+  &#123;
+    width: 50px;
+    height: 50px;
+  &#125;
+
+  .cart-item .name
+  &#123;
+    flex-grow: 1;
+    margin-left: 10px;
+  &#125;
+
+  .cart-item .remove
+  &#123;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  &#125;
+
+  .cart-item .remove:hover
+  &#123;
+    background-color: darkred;
+  &#125;
+
+
+  .footer
+  &#123;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  &#125;
+
+  body
+  &#123;
+    scrollbar-width: thin;
+    scrollbar-color: $dark;
+  &#125;
+
+  .scrollbar::-webkit-scrollbar
+  &#123;
+    width: 10px;
+    background-color: $dark;
+  &#125;
+
+  .scrollbar::-webkit-scrollbar-thumb
+  &#123;
+    background-color: $dark;
+    border-radius: 5px;
+  &#125;
+
+  .scrollbar
+  &#123;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f5f5f500;
+  &#125;
+
+  .scrollbar
+  &#123;
+    margin-left: 30px;
+    float: left;
+    height: 300px;
+    width: 65px;
+    margin-bottom: 25px;
+    overflow-y: scroll;
+  &#125;
+
+  ::-webkit-scrollbar
+  &#123;
+    width: 10px;
+    background-color: #5a5a5a;
+  &#125;
+
+  ::-webkit-scrollbar-thumb
+  &#123;
+    background-color: $dark;
+    border-radius: 5px;
+  &#125;
+
+  .responsive-img &#123;
+    max-width: 100%;
+    height: auto;
+  &#125;
+
+  .text-qualiopi &#123;
+    font-size: 14px;
+    color: #666;
+  &#125;
+
+  .growth &#123;
+    flex: 1;
+  &#125;
+
+  .h-nowrap &#123;
+    white-space: nowrap;
+  &#125;
+
+  .wrapper-tag-card &#123;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  &#125;
+
+    .bg-color &#123;
+    background-color:
+    <input
+      type="text"
+      [(ngModel)]="backgroundColor"
+      (input)="updateBackground()"
+      class="editable-input"
+      value="{{backgroundColor}}"
+    />;
+  &#125;
+
+  //Important ne pas passer en noir (#000) sinon l'application sera utilisable
+  .btn-color &#123;
+    background-color:
+    <input
+      type="text"
+      [(ngModel)]="backgroundColorBtn"
+      (input)="updateBackground()"
+      class="editable-input"
+      value="{{backgroundColorBtn}}"
+    />;
+  &#125;
+  </code>
+</pre>
+</div>
+
+<div class="centered-bellow d-flex flex-column">
+  <p>Nan mais en fait elle marche même pas l'application</p>
+  <button
+    class="btn btn-scred text-white bg-alpha"
+    [style.backgroundColor]="backgroundColorBtn"
+    (click)="onBtnClick()"
+    [disabled]="isDisabled"
+  >
+    Voir l'application
+  </button>
+</div>
+
+<div class="centered-far-x1-bellow" [hidden]="!hasColorChanged()">
+  <h5>Non mais non arrête</h5>
+</div>
+
+<div class="centered-far-x1-bellow" [hidden]="hasColorChanged()">
+  <h5>Mais tu vas où ?</h5>
+</div>
+
+<div class="centered-far-x2-bellow" [hidden]="hasColorChanged()">
+  <h5>Non mais y'a rien</h5>
+</div>
+
+<div class="centered-far-x2-bellow" [hidden]="!hasColorChanged()">
+  <h5>Euh t'es sur de l'avoir bien remis ?</h5>
+</div>
+
+<div class="centered-far-x3-bellow" [hidden]="hasColorChanged()">
+  <h5>Arrêteeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeees</h5>
+</div>
+
+<div class="centered-far-max-bellow text-center">
+  <h5 [style.color]="backgroundColorBtn">
+    Ouai ok mais y'a pas de boutton ici
+  </h5>
+  <h6 [style.color]="backgroundColorBtn">
+    Bon remet le comme tu l'as trouvé, y'a pas d'application
+  </h6>
+</div>

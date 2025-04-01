@@ -1,0 +1,28 @@
+.falling-div {
+  position: fixed;
+  top: -100px; /* Position initiale au-dessus de l'écran */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 100px;
+  background-color: #21606e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.falling-div.animate {
+  animation: fall-animation 2s ease-out forwards; /* Animation déclenchée */
+}
+
+@keyframes fall-animation {
+  from {
+    top: -100px; /* Départ en dehors de l'écran */
+    opacity: 0; /* Invisible au départ */
+  }
+  to {
+    top: calc(100vh - 100px); /* Arrivée en bas de l'écran */
+    opacity: 1; /* Complètement visible */
+  }
+}
