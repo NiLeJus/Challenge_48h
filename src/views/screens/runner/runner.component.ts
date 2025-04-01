@@ -10,6 +10,7 @@ import { GlobalStoreService } from '../../../services/stores/global-store.servic
   styleUrls: ['./runner.component.scss']
 })
 export class RunnerComponent implements OnInit {
+
   runner: boolean = true
   characterX = 50;
   characterY = 150;
@@ -25,6 +26,10 @@ export class RunnerComponent implements OnInit {
   jumpDirection = 0;
   gameInterval: any;
   globalStore = inject(GlobalStoreService);
+
+  constructor() {
+
+  }
 
   obstacles = [
     { x: 0, y: 0, width: 40, height: 200 }, // mur gauche
@@ -60,6 +65,7 @@ export class RunnerComponent implements OnInit {
 
 
   ngOnInit() {
+    console.log(this.globalStore)
     // Démarrer la boucle de jeu
     this.gameInterval = setInterval(() => this.gameLoop(), 20);
   }
