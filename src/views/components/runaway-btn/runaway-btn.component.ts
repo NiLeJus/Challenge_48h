@@ -17,7 +17,7 @@ export class RunawayBtnComponent {
   globalStore = inject(GlobalStoreService);
 
   //In px
-  private readonly sensitivity = 0.1;
+  private readonly sensitivity = 0.2;
   private readonly activationRadius = 150;
 
   constructor(private el: ElementRef, private renderer: Renderer2) {}
