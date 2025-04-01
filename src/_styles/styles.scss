@@ -14,7 +14,7 @@
 }
 
 .btn-scred {
-  cursor: default !important ;
+  cursor: default !important;
 }
 
 // * {
@@ -72,4 +72,18 @@
   top: 450%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
 }
