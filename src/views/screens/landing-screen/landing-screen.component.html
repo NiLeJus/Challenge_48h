@@ -17,7 +17,10 @@
     }
   </div>
 </div>
+
+@if (this.globalStore.isAtChapter() != 6) {
 <h1 class="centered">There is no app</h1>
+}
 
 <!-- CHAP 0 -->
 @if (this.globalStore.isAtChapter() == 0) {
@@ -91,9 +94,4 @@
 <!-- CHAP 6 -->
 @if (this.globalStore.isAtChapter() == 6) {
 <app-find-password class="" />
-}
-
-<!-- CHAP 7 -->
-@if (this.globalStore.isAtChapter() == 7) {
-<app-falling-title class="" />
 }
