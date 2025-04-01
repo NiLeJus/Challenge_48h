@@ -10,6 +10,7 @@ section {
     width: 100%;
   }
 }
+
 .top-bar {
   position: absolute;
   top: 0;
@@ -27,3 +28,22 @@ section {
 .left-content {
   font-size: 18px;
 }
+
+.circle-ctn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  transition: background-color 5.75s ease-in-out;
+  position: relative;
+}
+
+app-ending-screen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

@@ -7,14 +7,21 @@ import { SteamAchievementComponent } from "../../components/steam-achievement/st
 import { FakeBtn2Component } from "../../components/fake-btn-2/fake-btn-2.component";
 import { FallingBtnComponent } from "../../components/falling-btn/falling-btn.component";
 import { RunnerComponent } from "../runner/runner.component";
+import { EndingScreenComponent } from "../../components/ending-screen/ending-screen.component";
 
 @Component({
   selector: 'app-landing-screen',
-  imports: [CorrectCssComponent, RunawayBtnComponent, FakeBtnComponent, SteamAchievementComponent, FakeBtn2Component, FallingBtnComponent, RunnerComponent],
+  imports: [CorrectCssComponent, RunawayBtnComponent, FakeBtnComponent, SteamAchievementComponent, FakeBtn2Component, FallingBtnComponent, RunnerComponent, EndingScreenComponent],
   templateUrl: './landing-screen.component.html',
   styleUrl: './landing-screen.component.scss',
 })
 
 export class LandingScreenComponent {
   globalStore = inject(GlobalStoreService);
+
+  onRestart() {
+    this.globalStore.setIsAtChapter(0);
+  }
+
+
 }

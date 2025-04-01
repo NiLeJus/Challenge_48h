@@ -16,7 +16,7 @@
   </div>
 </div>
 
-<h1 class="centered">There is no app</h1>
+<h1 class="centered there-is-no-app">There is no app</h1>
 
 
 
@@ -82,4 +82,11 @@
   <h2 class="centered-below">Tiens joue au jeu, comme ça t'es content...</h2>
   <app-runner></app-runner>
 </section>
+}
+
+@if (this.globalStore.isAtChapter() == 7) {
+
+<app-ending-screen [title]="'Bravo !'" [message]="'Tu as terminé le jeu avec succès !'" onload="removeTitle()">
+</app-ending-screen>
+
 }
